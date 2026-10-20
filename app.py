@@ -14,12 +14,6 @@ st.set_page_config(
 )
 
 
-st.set_page_config(
-    page_title="Festa em Cena | Auditoria & Vendas",
-    page_icon="🎃",
-    layout="wide",
-)
-
 # --- CUSTOMIZAÇÃO VISUAL: REDUÇÃO DO TOPO E FONTE DO HEADER ---
 st.markdown(
     """
@@ -115,9 +109,13 @@ somente_problemas = st.sidebar.checkbox(
     help="Filtra pedidos com problemas numéricos (qtd/preço) ou data inválida.",
 )
 
+# [RODAPÉ] Assinatura do desenvolvedor
 st.sidebar.markdown("---")
-st.sidebar.caption("Festa em Cena • Análise Sazonal de Halloween")
-
+st.sidebar.caption("Desenvolvido por **Hilário Gouveia**")
+st.sidebar.markdown(
+    "[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hilário-gouveia-30a09b26b) "
+    "[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/HilarioGouveia)"
+)
 
 # ==========================================
 # PAINEL PRINCIPAL: KPIS E ANÁLISE EXPLORATÓRIA
@@ -169,7 +167,7 @@ with tab1:
         st.dataframe(
             contagem_canal.style.format({"Participação (%)": "{:.1f}%"}),
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
         )
 
 # --- Aba 2: Análise Temporal ---
@@ -214,4 +212,4 @@ with tab3:
         "problema_numerico",
         "data_entrega",
     ]
-    st.dataframe(df_view[colunas_exibicao], use_container_width=True)
+    st.dataframe(df_view[colunas_exibicao], width="stretch")

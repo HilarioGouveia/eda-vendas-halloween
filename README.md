@@ -1,5 +1,22 @@
 # Processamento, Auditoria de Vendas e Dashboard - Festa em Cena
 
+<div align="center">
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://eda-vendas-halloween.streamlit.app/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/pandas-2.0+-150458.svg?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.30+-FF4B4B.svg?style=flat&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Status](https://img.shields.io/badge/status-concluído-brightgreen.svg?style=flat)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub last commit](https://img.shields.io/github/last-commit/HilarioGouveia/eda-vendas-halloween?style=flat&logo=github)](https://github.com/HilarioGouveia/eda-vendas-halloween)
+[![Dataset](https://img.shields.io/badge/dataset-1.500_linhas-orange?style=flat&logo=database)](#)
+
+</div>
+
+> 🔗 **Acesse o Dashboard Online:** [eda-vendas-halloween.streamlit.app](https://eda-vendas-halloween.streamlit.app/)
+
+---
+
 Este repositório contém a solução desenvolvida para higienização, auditoria de integridade cadastral e análise exploratória dos dados transacionais sazonais da Festa em Cena. O projeto conta com execução via terminal (CLI) e um dashboard interativo construído em Streamlit.
 
 ---
